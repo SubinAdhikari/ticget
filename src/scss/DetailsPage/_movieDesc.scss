@@ -1,0 +1,44 @@
+@import "../includes/variable";
+
+// .movieDescMain {
+.contentDiv {
+  //   @media (max-width: $mobileDevice) {
+  //     height: auto;
+  //   }
+  .movieName {
+    font-size: 40px;
+    color: white;
+    font-weight: 900;
+    @media (max-width: $mobileDevice) {
+      font-size: 20px;
+    }
+  }
+  .keywords {
+    background-color: white;
+    color: $fontColor;
+    cursor: pointer;
+  }
+  .durationText {
+    font-size: 20px;
+    color: white;
+    @media (max-width: $mobileDevice) {
+      font-size: 17px;
+    }
+  }
+  .bookingBtn {
+    background-color: $signIn;
+    outline: none;
+    border-width: 0ch;
+    border-radius: 7px;
+    font-weight: bold;
+    @media (max-width: $mobileDevice) {
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      z-index: 2;
+      height: 50px;
+      font-size: 20px;
+    }
+  }
+}
+// }

@@ -1,0 +1,25 @@
+@import "../includes/variable";
+.castCardMainDiv {
+  // background-color: coral;
+  // border: 1px red solid;
+  .imageDiv {
+    width: 50%;
+    height: 50%;
+    @media (max-width: $mobileDevice) {
+      width: 40%;
+      height: 40%;
+    }
+    border-radius: 50%;
+    // background-color: yellowgreen;
+    overflow: hidden;
+    img {
+      object-fit: contain;
+    }
+  }
+  .name {
+    color: $fontColor;
+  }
+  .characterName {
+    color: grey;
+  }
+}

@@ -1,0 +1,56 @@
+@import "./includes/variable";
+
+.menuBarMain {
+  background-color: $secondary;
+  @media (max-width: $mobileDevice) {
+    background-color: $primary !important;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    margin-top: 45px !important;
+  }
+
+  .toggleIcon {
+    border-width: 0ch;
+  }
+  .toggleCloserForMobile {
+    display: none !important;
+    @media (max-width: $mobileDevice) {
+      display: block !important;
+      .toggleIcon {
+        position: absolute;
+        right: 0;
+      }
+    }
+  }
+
+  @media (max-width: $mobileDevice) {
+    .navbar-collapse {
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      width: 100vw;
+      margin-left: -100%;
+      overflow-y: scroll;
+      background-color: $primary;
+      color: white;
+    }
+    .show {
+      margin-left: 0%;
+      z-index: 1024;
+      transition: all ease 0.25s;
+      padding: 10px;
+    }
+  }
+
+  .menuItems {
+    color: grey !important;
+    font-size: 15px !important;
+    font-weight: bold;
+    transition: 0.5s ease-in;
+    &:hover {
+      color: white !important;
+    }
+  }
+}

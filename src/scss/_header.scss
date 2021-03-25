@@ -1,0 +1,110 @@
+@import "./includes/variable";
+.navBarMainDiv {
+  background-color: $primary;
+  color: white;
+
+  @media (max-width: $mobileDevice) {
+    display: flex;
+    justify-content: start;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .searchBox {
+    @media (max-width: $mobileDevice) {
+      margin-top: 10px !important;
+    }
+    input {
+      outline: none;
+      border-width: 0px;
+      color: grey;
+      border-radius: 3px;
+      font-size: 15px;
+    }
+    i {
+      position: absolute;
+      left: 0;
+      margin-top: 5px;
+      margin-left: 10px;
+      color: grey;
+    }
+  }
+
+  .RightItems {
+    @media (max-width: $mobileDevice) {
+      display: none;
+    }
+    .signInBtn {
+      background-color: $signIn !important;
+      border-width: 0ch;
+    }
+  }
+
+  .signInBtnMobile {
+    display: none;
+    background-color: $signIn !important;
+    border-width: 0ch;
+    @media (max-width: $mobileDevice) {
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+  }
+}
+
+.signInModelMainDiv {
+  padding: 0px;
+
+  .modal-content {
+    border-radius: 10px;
+    @media (max-width: $mobileDevice) {
+      border-top-left-radius: 50px;
+      border-top-right-radius: 50px;
+      border-top: 1px $secondary solid;
+      border-left: 1px $secondary solid;
+      border-right: 1px $secondary solid;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: 0px;
+      padding: 0px;
+    }
+  }
+
+  .modal-header {
+    border: 0ch;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .modal-title {
+      padding: 10px;
+      border-bottom: 1px $secondary solid;
+      font-weight: 900;
+    }
+  }
+
+  .modal-body {
+    border: 0ch;
+    padding-bottom: 0px;
+  }
+
+  .modal-footer {
+    padding-top: 0px;
+    border: 0ch;
+    .btn {
+      background-color: $signIn !important;
+      border: 0ch;
+      font-weight: 900;
+    }
+  }
+  .SignUpTextMain {
+    padding-bottom: 10px;
+    color: grey;
+    .signUpText {
+      color: blueviolet;
+      text-decoration: underline;
+    }
+  }
+}

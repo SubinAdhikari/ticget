@@ -1,0 +1,18 @@
+@import "../includes/variable";
+
+.categoryCardMainDiv {
+  height: 220px;
+  overflow: hidden;
+  // border: 1px red solid;
+  @media (max-width: $mobileDevice) {
+    height: auto;
+  }
+  .imgDiv {
+    width: 90%;
+    // background-color: coral;
+    height: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+    object-fit: cover;
+  }
+}

@@ -1,0 +1,51 @@
+@import "../includes/variable";
+
+.movieCardMainDiv {
+  // background-color: coral;
+  height: 450px;
+  // border: 1px red solid;
+  @media (max-width: $mobileDevice) {
+    height: auto;
+  }
+  .imageDiv {
+    width: 90%;
+    height: 80%;
+    // background-color: blueviolet;
+    overflow: hidden;
+    object-fit: cover;
+    border-radius: 5px;
+
+    img {
+      object-fit: fill;
+    }
+  }
+  .descDiv {
+    width: 90%;
+    overflow: hidden;
+    .movieName {
+      // color: $fontColor;
+      width: 200px;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      font-size: 17px;
+      font-weight: 900;
+      @media (max-width: $mobileDevice) {
+        font-size: 16px;
+        width: 120px;
+      }
+    }
+    .movieGenera {
+      // color: grey;
+      width: 200px;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      font-size: 13px;
+      @media (max-width: $mobileDevice) {
+        font-size: 12px;
+        width: 120px;
+      }
+    }
+  }
+}

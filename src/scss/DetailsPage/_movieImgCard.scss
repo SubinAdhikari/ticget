@@ -1,0 +1,23 @@
+@import "../includes/variable";
+
+.detailsPageMovieCard {
+  // height: auto;
+  // background-color: red;
+  border-radius: 10px;
+  overflow: hidden;
+  @media (max-width: $mobileDevice) {
+    height: auto;
+  }
+  .imgDiv {
+    height: auto;
+    // background-color: coral;
+    img {
+      object-fit: cover !important;
+    }
+  }
+  .releaseDateDiv {
+    height: auto;
+    color: white;
+    overflow: hidden;
+  }
+}

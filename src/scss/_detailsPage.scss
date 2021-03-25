@@ -1,0 +1,24 @@
+@import "./includes/variable";
+
+.detailsPageHeroSection {
+  height: auto;
+  // background-color: $fontColor;
+  background-color: rgba(51, 51, 51, 0.9);
+  @media (max-width: $mobileDevice) {
+    flex-direction: column;
+  }
+}
+
+.sectionHeader {
+  // background-color: red;
+  font-size: 24px;
+  color: $fontColor;
+  font-weight: 900;
+}
+.sectionDesc {
+  // background-color: yellowgreen;
+  text-align: justify;
+  font-size: 16px;
+  color: $fontColor;
+  border-bottom: 1px $border solid;
+}

@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Montserrat", sans-serif;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+body::-webkit-scrollbar {
+  width: 0 !important;
+}
+
+@import "../header";
+@import "../menuBar";
+@import "../footer";
+@import "../common/categoryHeader.scss";
+@import "../common/movieCard";
+@import "../common/categoryCard";
+@import "../detailsPage";
+@import "../DetailsPage/movieImgCard";
+@import "../DetailsPage/movieDesc";
+@import "../DetailsPage/movieCastCard";
+@import "../carousalComponent/cardOwlCarousal";
+@import "../movieListCard/movieListCard";

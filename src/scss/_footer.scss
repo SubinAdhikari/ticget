@@ -1,0 +1,57 @@
+@import "includes/variable";
+
+.footerMainDiv {
+  background-color: $fontColor;
+  color: grey;
+  font-size: 17px;
+  overflow: hidden;
+  @media (max-width: $mobileDevice) {
+    font-size: 16px;
+  }
+  .brandName::before,
+  .brandName::after {
+    background-color: grey;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 620px;
+    @media (max-width: $mobileDevice) {
+      width: 125px;
+    }
+  }
+
+  .brandName:before {
+    right: 0.5em;
+    margin-left: -620px;
+    @media (max-width: $mobileDevice) {
+      margin-left: -125px;
+    }
+  }
+
+  .brandName:after {
+    left: 0.5em;
+    margin-right: -620px;
+    @media (max-width: $mobileDevice) {
+      margin-right: -125px;
+    }
+  }
+
+  i {
+    margin: 10px;
+    border: 1px grey solid;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s ease-in;
+    cursor: pointer;
+    &:hover {
+      background-color: white;
+      color: black;
+    }
+  }
+}
